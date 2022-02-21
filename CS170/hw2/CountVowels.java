@@ -3,7 +3,6 @@ public class CountVowels {
 	public static void main(String[] args) { // this is the main method 
 		System.out.println(countVowels("okay")); // prints the int of number of vowels when the string is set to "okay"
 		System.out.println(countVowels("aashna"));// prints the int of the number of vowels when the String is set to "aashna"
-
 		System.out.println(countVowels("VIetnam")); // prints the int of vowels in the word "VIetnam"
 
 	}
