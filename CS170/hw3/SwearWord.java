@@ -7,15 +7,17 @@ public class SwearWord{
     String result = "";
     for(int i = 0; i < s.length(); i ++){ // this is a nested for loop which goes on for the length of String s. 
       for(int j = 0; j < b.length;  j++){ // this for loop goes on for the length of of the array of Strings. 
-          if(s.charAt(i) == b[j].charAt(0) || s.toLowerCase().charAt(i) == b[j].charAt(0)){
+        if(s.charAt(i) == b[j].charAt(0) || s.toLowerCase().charAt(i) == b[j].charAt(0)){
             int count = 0;
             int a = i;
+          
             for(int l = 0; l < b[j].length(); l++){
               if(s.charAt(a) == b[j].charAt(l) || s.toLowerCase().charAt(a) == b[j].charAt(l)){ // this is the conditional statement which tests if there is swear word elements in the string. 
               count += 1;
+              }
+              a += 1;
             }
-            a += 1; 
-          }
+          
           if(count == b[j].length()){
             if(j == 0){
               result = result + s.substring(i, i + 1);
@@ -24,7 +26,7 @@ public class SwearWord{
               result = result + "*";
             }
             result = result + (s.substring(i + b[j].length() - 1, i + b[j].length())); // combines the string with "*" to the other part of the word. 
-        } else if (result.length() < s.substring(0, i+1).length()){ 
+          } else if (result.length() < s.substring(0, i+1).length()){ 
             result = result + s.substring(i, i + 1);
         }
       }
