@@ -2,12 +2,12 @@
 
 public class FractalMickeyMouse{
 	
-	public static void main(String[] args){
-		Turtle t = new Turtle();
-		t.delay(3);
-		fractalMickeyMouse(t,200,3);
+public static void main(String[] args){
+	Turtle t = new Turtle();
+	t.delay(3);
+	fractalMickeyMouse(t,200,3);
 
-	}
+}
 public static void mickeyFace(Turtle t, double r){
         t.right(90);
         t.penup();
