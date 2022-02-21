@@ -16,7 +16,6 @@ public class DigitCount {
 			if (digit == 0) {
 				count++;
 			}
-
 		}
 		while (number > 0 || number < 0) { // while the number is not at 0 tho the number is losing one digit each time as ints are always rounded 
 			a = number % 10;
