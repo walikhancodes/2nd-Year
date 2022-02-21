@@ -1,7 +1,6 @@
 public class CompareCars { 
 
-	//Task 2: Car A would be cheaper if it was kept for only 5 years whereas, car B is less expensive than Car A after ten years
-
+	// Task 2: Car A would be cheaper if it was kept for only 5 years whereas, car B is less expensive than Car A after ten years
 	// Task 3: returning something in a method returns the type of variable declared after "public static" to the main method whereas printing something using println just prints it on to the terminal. 
 	public static void main(String[] args) { // this is the main method 
 		System.out.println(compareCars(5)); // this will print the String result of method compareCars at int = 5 years
@@ -50,5 +49,6 @@ public class CompareCars {
 			return "Car B";
 		}
 	}
+	
 }
 
