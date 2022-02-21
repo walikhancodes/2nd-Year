@@ -3,12 +3,10 @@
 public class CreditCard{
 	
 	public static void main(String[] args){ // this is the main method whichs sets up the elements contained in each array to be used as test cases 
-		
-	int[] a = new int[]{4,5,6,3,9,2};
-	System.out.println(luhnCheckSum(a)); // defines the elments of the array that are used as an input in the method luhnCheckSum
-	int[] b = new int[]{4,9,9,1,6,5,7};
-	System.out.println(luhnCheckSum(b));
-
+		int[] a = new int[]{4,5,6,3,9,2};
+		System.out.println(luhnCheckSum(a)); // defines the elments of the array that are used as an input in the method luhnCheckSum
+		int[] b = new int[]{4,9,9,1,6,5,7};
+		System.out.println(luhnCheckSum(b));
 	}
 
 	public static int luhnCheckSum(int[] x){ // this method returns an int to the main method to be printed
@@ -22,12 +20,10 @@ public class CreditCard{
 					result += product;
 					checksum += Integer.parseInt(result.substring(0, 1)); // this is used to seperate the digits 
 					checksum += Integer.parseInt(result.substring(1)); 
-				}
-				else{
+				} else{
 					checksum += product;
 				}
-			}
-			else{
+			} else{
 				checksum = checksum + x[i];
 			}
 		}
