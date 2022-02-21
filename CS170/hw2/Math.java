@@ -3,7 +3,6 @@
 public class Math{
 
 	public static void main(String[] args) { // this is the main method that calls to print the test cases. 
-		
 		System.out.println(sumOfSquares(4));
 		System.out.println(product(4,2));
 		System.out.println(product(8,5));
