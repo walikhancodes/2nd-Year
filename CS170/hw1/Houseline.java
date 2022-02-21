@@ -1,10 +1,10 @@
 public class Houseline {
-
+  
   public static void main(String[] args) { //main method makes a new turtle and defines the variables of the method houseline
     Turtle wali = new Turtle();
     houseline(wali, 20);
-
   }
+  
   public static void houseline(Turtle t, int numHouses) { //the method that makes the turtle move a relative distance then make a house which is 1/n smaller each time.
     for (int i = 0; i < numHouses; i++){
         house(t, i+1);
@@ -13,8 +13,8 @@ public class Houseline {
         t.forward(20/(i+1));
         t.pendown();
     }
-
   }
+  
   public static void house(Turtle t, double s) { // this is the method that makes the house which it does by making the front of the house first then it moves around to make the top.
     front(t, s);
     t.left(90);
@@ -25,7 +25,7 @@ public class Houseline {
     t.backward(80/s);
     t.right(90);
   }
-
+  
   public static void front(Turtle t, double s) { // this is the method which makes the front of the house it does this by making the walls, door, and window.
     walls(t, s);
     t.forward(30/s);
@@ -67,7 +67,6 @@ public class Houseline {
   }
 
   public static void windows(Turtle t, double s) { // this is the method that creates the windows which is just two squares spaces out.
-
     square(t, 20/s);
     t.penup();
     t.forward(40/s);
