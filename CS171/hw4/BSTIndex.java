@@ -9,18 +9,15 @@ CODE WRITTEN BY OTHER STUDENTS . Wali Khan
 public class BSTIndex{
 
 	class Node{
-
 		public String key;
 		public MovieInfo data;
 		public Node left;
 		public Node right;
-
 		public Node(String key, MovieInfo data){
 			this.key = key;
 			this.data = data;
 
 		}
-
 		public Node(String key, MovieInfo data, Node left, Node right){
 			this.key = key;
 			this.data = data;
@@ -30,7 +27,6 @@ public class BSTIndex{
 	}
 
 	private Node root;
-	
 	public BSTIndex(){
 		root = null; 
 	}
