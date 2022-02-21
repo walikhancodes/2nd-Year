@@ -9,13 +9,14 @@ public class CountVowels {
 	}
 
 	public static int countVowels(String s) { // this is the method countVowels which only takes a String as a parament and outputs an int 
-	s = s.toUpperCase();
-	int count = 0;
-	for (int i = 0; i < s.length(); i++) {
-	if (s.charAt(i) == 'A' || s.charAt(i) == 'E' || s.charAt(i) == 'I' || s.charAt(i) == 'O' || s.charAt(i) == 'U') { // basically saying to add one to the result int if the chars in the String are equal to a vowel 
-	count++;
-} 
+		s = s.toUpperCase();
+		int count = 0;
+		for (int i = 0; i < s.length(); i++) {
+			if (s.charAt(i) == 'A' || s.charAt(i) == 'E' || s.charAt(i) == 'I' || s.charAt(i) == 'O' || s.charAt(i) == 'U') { // basically saying to add one to the result int if the chars in the String are equal to a vowel 
+				count++;
+			} 
+		}
+		return count; // returns the int of the number of vowels in a word to the main method to print. 
 	}
-	return count; // returns the int of the number of vowels in a word to the main method to print. 
-	}
+
 }
