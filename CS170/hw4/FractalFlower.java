@@ -37,9 +37,8 @@ public class FractalFlower{
 	}
 
 	public static void fractalFlower(Turtle t, double size, int level) {
-		if (level == 0) { // if the level is equal to 0 the method returns nothing 
-			return;
-			} else { 
+		if (level == 0) return;// if the level is equal to 0 the method returns nothing
+		else { 
 			t.forward(2 * size / 3);  // this is the stem
 			for (int i = 0; i < 8; i++) {  // each time the turtle makes the petal and stem smaller by 1/3.
 				fractalFlower(t, size/3, level -1);  
@@ -49,9 +48,9 @@ public class FractalFlower{
 				t.left(45);
 				t.pendown();
 			}
-			t.penup();
-			t.backward(2 * size / 3);  // brings turtle back to the origin.
 		}
+		t.penup();
+		t.backward(2 * size / 3);  // brings turtle back to the origin.
 	}
 }
 
