@@ -5,14 +5,10 @@ public class Math{
 	public static void main(String[] args) { // this is the main method that calls to print the test cases. 
 		
 		System.out.println(sumOfSquares(4));
-		
 		System.out.println(product(4,2));
 		System.out.println(product(8,5));
-
 		System.out.println(compoundInterest(1000, 0.05, 3));
-
 		System.out.println(polySpiralLength(8,5,3));
-
 	}
  
 	public static int sumOfSquares(int n){ // the method sum of squares takes some int result and each interval of n the next  number is 1/n^2.
@@ -42,7 +38,7 @@ public class Math{
 	public static double polySpiralLength(int n, double base, int rounds){  // this is the method which will return the length of a polyspiral.
 		double result = 0;
 		for(int i = 0; i < n * rounds; i++){
-		result = base * (i+1);
+			result = base * (i+1);
 		
 		}
 		return result; 
