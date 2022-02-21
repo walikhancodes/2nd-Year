@@ -18,9 +18,6 @@ public class FractalFlower{
 		t.pendown();
 		t.left(90);
 		fractalFlower(t,300,4);
-
-
-
 	}
 
 	public static void simpleFlower(Turtle t, double size){ // this is the method for a simple flower without using recursion. The parameters are Turtle and a double.
