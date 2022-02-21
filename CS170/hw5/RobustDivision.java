@@ -11,10 +11,8 @@ public class RobustDivision{
                 int value = 0;
                 for(int i = 1; i < n; i++){
                         try{ //try catch block 
-                                if(a[i-1] == 0)
-                                        throw new ArithmeticException(); // goes to catch 
-                                if(i > a.length)
-                                        throw new ArrayIndexOutOfBoundsException(); // goes to catch 
+                                if (a[i-1] == 0) throw new ArithmeticException(); // goes to catch 
+                                if (i > a.length) throw new ArrayIndexOutOfBoundsException(); // goes to catch 
                                 value = (a[i])/(a[i-1]);        
                         }
                         catch(ArithmeticException e){
