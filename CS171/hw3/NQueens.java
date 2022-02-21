@@ -9,22 +9,17 @@ SOURCES OUTSIDE OF THOSE APPROVED BY THE INSTRUCTOR . Wali Khan
 
 public class NQueens {
 
- 
   //***** fill in your code here *****
   //feel free to add additional methods as necessary
- 
   //finds and prints out all solutions to the n-queens problem
   public static int solve(int n) {
-
     //***** fill in your code here *****
-    
     //update the following statement to return the number of solutions found
     Stack<Integer> numPositions = new Stack<Integer>(); 
     int result = 0; 
     int i = 1; 
     int j = 0;
     numPositions.push(j);
-
     while (!numPositions.isEmpty()){
       // test to see if we can place queen here
       if(isVertical(numPositions, i, j) || isDiagonal(numPositions, i, j)){
@@ -43,31 +38,22 @@ public class NQueens {
           j = numPositions.pop() + 1; 
           i--;
         }
-        
         if(numPositions.peek() >= n  && numPositions.size() <= 1){
             numPositions.pop();
             i--;
             j = 0;
         } else {
-
+         
         }
-
       }
-      
       if(numPositions.size() == n && numPositions.get(numPositions.size() - 1) == j){
         printSolution(numPositions);
         result++;
         j = numPositions.pop() + 1; 
         i--;
-   
-
-        
       }
-
     }
-  
     return result;
-    
   }//solve()
 
   //in this method isVertical I am running through each element in the stack using a for loop to check if an old 
@@ -114,20 +100,17 @@ public class NQueens {
   // ----- the main method -----
   // (you shouldn't need to change this method)
   public static void main(String[] args) {
-  
-  int n = 4;
-  
-  // pass in parameter n from command line
-  if (args.length == 1) {
-    n = Integer.parseInt(args[0].trim());
-    if (n < 1) {
-      System.out.println("Incorrect parameter");
-      System.exit(-1);
-    }//if   
-  }//if
-  
-  int number = solve(n);
-  System.out.println("There are " + number + " solutions to the " + n + "-queens problem.");
+   int n = 4;
+   // pass in parameter n from command line
+   if (args.length == 1) {
+     n = Integer.parseInt(args[0].trim());
+     if (n < 1) {
+       System.out.println("Incorrect parameter");
+       System.exit(-1);
+     }//if   
+   }//if
+   int number = solve(n);
+   System.out.println("There are " + number + " solutions to the " + n + "-queens problem.");
  }//main()
-  
-}
+
+} 
