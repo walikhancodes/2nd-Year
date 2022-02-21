@@ -1,7 +1,6 @@
 
 
 public class Polyspiral{
-	
 
 	public static void polyspiral(Turtle t, int n, double base , int rounds) {
 		for (int i = 0; i < rounds; i++) {
@@ -10,9 +9,10 @@ public class Polyspiral{
 			line(t, n, rounds);
 		}
 	}
+	
 	public static void main(String[] args) {
 		Turtle t = new Turtle();
-		
 		polyspiral(t, 3, 20, 5);
 	}
+	
 }
